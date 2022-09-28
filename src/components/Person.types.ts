@@ -1,6 +1,8 @@
 export type PersonProps = {
-    name: {
-        first: string
-        last: string
-    }
+    name: Name
+}
+
+export type Name = {
+    first: string
+    last: string
 }
