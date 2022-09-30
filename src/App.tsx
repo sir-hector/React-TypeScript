@@ -6,6 +6,7 @@ import { User } from "./components/context/User";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import {List} from './components/generics/List'
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           last: 'Wayne'
         }
       ]} onClick={(item) => console.log(item)}></List>
+
+      <RandomNumber value={10} isPositive></RandomNumber>
     </div>
   );
 }
